@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Carlos Melchor</title>
+  <link rel="icon" type="image/x-icon" href="./assets/github.ico">
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="screen.css" />
 </head>
@@ -55,9 +56,9 @@
       </div>
       <div id="socials-container">
         <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-          onclick="location.href='https://www.linkedin.com/in/carloslorenzomelchor/'" />
+          onclick="window.open('https://www.linkedin.com/in/carloslorenzomelchor/', '_blank')" />
         <img src="./assets/github.png" alt="My Github profile" class="icon"
-          onclick="location.href='https://github.com/CarlosMelchor/'" />
+          onclick="window.open('https://github.com/CarlosMelchor/', '_blank')" />
       </div>
     </div>
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'" />
@@ -82,7 +83,7 @@
             <p>Upcoming B.Sc. in <br />Computer Science</p>
           </div>
         </div>
-        <div class="text-container">
+        <div class="text-container" style="text-align: justify;">
           <p>
             Dynamic Computer Science Student with a passion for software
             development, boasting consistent academic excellence. Proficient
@@ -134,7 +135,7 @@
             </article>
           </div>
         </div>
-    
+
         <div class="details-container">
           <h2 class="experience-sub-title">Android Development</h2>
           <div class="article-container">
@@ -163,7 +164,7 @@
             </article>
           </div>
         </div>
-    
+
         <div class="details-container">
           <h2 class="experience-sub-title">Database Management</h2>
           <div class="article-container">
@@ -201,73 +202,116 @@
   <section id="practicum">
     <p class="section__text__p1">My</p>
     <h1 class="title">Practicum Experience</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/BPLO_Logo_Large.png" alt="BPLO Logo" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <h1 class="title">BPLO Document Management System</h1>
+        <div class="text-container">
+          <p class="project-description" style="text-align: justify;">
+            The Business Permits and Licensing Office Document Management System (BPLO DMS) developed during my
+            practicum at the City Government of Biñan's ICTO addresses BPLO's challenges with document storage and
+            retrieval. It includes a React Native mobile app, which I led the development of, for scanning, text
+            recognition, and labeling documents, facilitating quick digitization and secure upload.
+            The web application, built with CodeIgniter 4, features document management with advanced search, user
+            management, and role-based access controls. I dedicated 374 hours, working with a team, to developing and
+            learning these technologies, significantly improving BPLO’s document handling efficiency.
+          </p>
+          <h1 class="title">
+            <button class="btn btn-color-2" onclick="window.open('./assets/carlos-narrative-report.pdf')">
+              Practicum Report
+            </button>
+          </h1>
+        </div>
+      </div>
+    </div>
+
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
   </section>
-  
+
+
   <section id="projects">
     <p class="section__text__p1">My Recent</p>
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
       <div class="about-containers">
+
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/e-ganapp.png" alt="Project 1" class="project-img" onclick="openModal('modal1')" />
+            <img src="./assets/e-ganapp clear.png" alt="Project 1" class="project-img"
+              onclick="window.open('https://e-ganapp.mcl-ccis.net/webapp/', '_blank')" />
           </div>
           <h2 class="experience-sub-title project-title">e-ganapp</h2>
+          <div class="description-container">
+            <p class="project-description" style="text-align: justify;">e-ganapp is an event management system for Mapúa
+              MCL that simplifies event organization with QR-based attendance, custom forms, and data visualization.</p>
+          </div>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="openModal('modal1')">
-              View Details
-            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://e-ganapp.mcl-ccis.net/webapp/', '_blank')">Browse Site</button>
           </div>
         </div>
+
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/pixeltower.png" alt="Project 2" class="project-img" onclick="openModal('modal2')" />
+            <img src="./assets/pixeltower.png" alt="Project 2" class="project-img"
+              onclick="window.open('https://youtu.be/egYeqca-6t0', '_blank')" />
           </div>
           <h2 class="experience-sub-title project-title">Pixel Tower</h2>
+          <div class="description-container mb-3">
+            <p class="project-description" style="text-align: justify;">An endless climbing game where you ascend
+              platforms to score points. Navigate through obstacles and avoid falling spikes while climbing through
+              three challenging levels.</p>
+          </div>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="openModal('modal2')">
-              View Details
-            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://youtu.be/egYeqca-6t0', '_blank')">Watch Demo</button>
           </div>
         </div>
+
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/lanzones.png" alt="Project 3" class="project-img" onclick="openModal('modal3')" />
+            <img src="./assets/lanzones.png" alt="Project 3" class="project-img"
+              onclick="window.open('https://github.com/CarlosMelchor/lanzones_identification_using_CNN', '_blank')">
           </div>
           <h2 class="experience-sub-title project-title">Lanzones Classification</h2>
+          <div class="description-container">
+            <p class="project-description" style="text-align: justify;">This study experimented a program that aims to
+              classify if a lanzones tree bears a native or duko variety based on its leaves using Convolutional Neural
+              Networks Models.</p>
+          </div>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="openModal('modal3')">
-              View Details
-            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/CarlosMelchor/lanzones_identification_using_CNN', '_blank')">See
+              Details
           </div>
         </div>
-      </div>
-    </div>
-    <!-- Modals -->
-    <div id="modal1" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal1')">&times;</span>
-        <h2>e-ganapp</h2>
-        <p>Details about e-ganapp...</p>
-      </div>
-    </div>
-    <div id="modal2" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal2')">&times;</span>
-        <h2>Pixel Tower</h2>
-        <p>Details about Pixel Tower...</p>
-      </div>
-    </div>
-    <div id="modal3" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal3')">&times;</span>
-        <h2>Lanzones Classificatione</h2>
-        <p>Details about Lanzones Classification...</p>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/BPLO_Logo_Large.png" alt="Project 3" class="project-img"
+            onclick="location.href='./#practicum'" />
+          </div>
+          <h2 class="experience-sub-title project-title">BPLO DMS</h2>
+          <div class="description-container">
+            <p class="project-description" style="text-align: justify;">
+              The BPLO Document Management System includes a React Native mobile app for document scanning and text
+              recognition, and a CodeIgniter 4 web app for advanced document management and user controls. 
+            </p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+            onclick="location.href='./#practicum'">Explore </button>
+          </div>
+        </div>
+
       </div>
     </div>
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
   </section>
+
+
 
   <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
@@ -275,15 +319,17 @@
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
         <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:melchorcarlos02@gmail.com" style="color: rgba(212, 66, 6, 255);">melchorcarlos02@gmail.com</a></p>
+        <p><a href="mailto:melchorcarlos02@gmail.com"
+            style="color: rgba(212, 66, 6, 255);">melchorcarlos02@gmail.com</a></p>
       </div>
       <div class="contact-info-container">
         <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/carloslorenzomelchor/" style="color: rgba(212, 66, 6, 255);">LinkedIn</a></p>
+        <p><a href="https://www.linkedin.com/in/carloslorenzomelchor/" style="color: rgba(212, 66, 6, 255);"
+            target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
       </div>
     </div>
   </section>
-  
+
   <footer>
     <nav>
       <div class="nav-links-container">
@@ -296,7 +342,7 @@
         </ul>
       </div>
     </nav>
-    <p>Copyright &#169; 2024 Carlos Lorenzo M. Melchor. All Rights Reserved.</p>
+    <!--<p>Copyright &#169; 2024 Carlos Melchor. All Rights Reserved.</p>-->
   </footer>
   <script src="script.js"></script>
 </body>
